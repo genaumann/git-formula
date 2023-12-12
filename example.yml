@@ -1,0 +1,56 @@
+---
+git:
+  # user wide configs
+  user_config:
+    - key: user.email
+      value: g@gnaumann.de
+      user: gna # default == root
+      global: True # all repos, True if no repo specified
+      state: present # default
+    - key: user.name
+      value: Gino Naumann
+      user: gna
+    - key: mysection.myattribute
+      value: # multiple vars, order matters
+        - val1
+        - val2
+      repo: /path/to/repo # specific repo, global = False
+
+    ## delete config
+    - key: foo.bar
+      user: gna
+      all: True # delete all foo.bar configs, True if no value
+      state: absent
+    - key: 'foo\..+' # key can be regex
+      user: gna
+      value: bar # value can be regex
+      state: absent
+
+  # system wide configs
+  system_config_file: /etc/gitconfig # default
+  system_config:
+    alias: # section
+      st: status # key: value
+      fe: fetch
+      pu: push
+    init:
+      defaultbranch: main
+
+  # clone, delete, update repos
+  repo_base_path: /src
+  repo:
+    salt:
+      name: https://github.com/saltstack/salt # REQUIRED
+      state: latest # latest | absent | cloned <- default
+      target: /src/salt # default == repo_base_path/repo
+      user: root # <- default (user must exist!)
+      identity: # SSH private key(s) - as list or string
+        - path/to/private_key
+      https_user: username # user for HTTPS repo
+      https_pass: password # password for HTTPS repo
+      rev: HEAD # remote branch, tag, or revision ID to checkout after clone
+      force_checkout: False # True to discard unwritten changes when checking out
+      force_clone: False # if target directory exists and is not a git repository, then this state will fail
+      force_fetch: False # True to force the fetch even if it is a non-fast-forward update.
+      force_reset: False # True to force a hard-reset to the remote revision
+      submodules: False # Update submodules on clone or branch change
