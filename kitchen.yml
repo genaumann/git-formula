@@ -3,13 +3,18 @@ driver:
   name: vagrant
 
 platforms:
-  - name: ubuntu-22.04
-  - name: debian-12
+  - name: ubuntu-22.04-3006.5
+    driver:
+      box: genaumann/ubuntu2204-salt
+      box_version: "3006.5"
+  - name: debian-12-3006.5
+    driver:
+      box: genaumann/debian12-salt
+      box_version: "3006.5"
 
 suites:
-  - name: sulfur
+  - name: default
     provisioner:
-      salt_bootstrap_options: -X -p git stable 3006.5
       state_top:
         base:
           "*":
@@ -31,8 +36,8 @@ suites:
 
 provisioner:
   name: salt_solo
-  log_level: info
-  salt_install: bootstrap
+  log_level: debug
+  salt_install: none
   require_chef: false
   formula: git
   salt_copy_filter:
