@@ -1,0 +1,44 @@
+---
+driver:
+  name: vagrant
+
+platforms:
+  - name: ubuntu-22.04
+  - name: debian-12
+
+suites:
+  - name: sulfur
+    provisioner:
+      salt_bootstrap_options: -X -p git stable 3006.5
+      state_top:
+        base:
+          "*":
+            - git
+      pillars_from_files:
+        system_config.sls: test/salt/pillar/system_config.sls
+        user_config.sls: test/salt/pillar/user_config.sls
+        repo.sls: test/salt/pillar/repo.sls
+      pillars:
+        top.sls:
+          base:
+            "*":
+              - system_config
+              - user_config
+              - repo
+    verifier:
+      inspec_tests:
+        - path: test/integration/default
+
+provisioner:
+  name: salt_solo
+  log_level: info
+  salt_install: bootstrap
+  require_chef: false
+  formula: git
+  salt_copy_filter:
+    - .git/
+    - .github/
+    - .kitchen/
+
+verifier:
+  name: inspec
