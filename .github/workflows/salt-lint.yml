@@ -1,0 +1,13 @@
+---
+name: Salt lint
+on:
+  - push
+
+jobs:
+  salt-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      - name: Run salt-lint
+        uses: roaldnefs/salt-lint-action@master
