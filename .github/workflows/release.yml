@@ -1,7 +1,11 @@
 ---
 name: Release
 on:
-  push:
+  workflow_run:
+    workflows:
+      - Salt Kitchen test
+    types:
+      - completed
     branches:
       - main
 
