@@ -2,7 +2,7 @@
 name: default
 title: git formula
 maintainer: Gino Naumann
-version: 0.0.0
+version: 1.0.0
 licence: Apache-2.0
 summary: Verify that the git state manages git correctly
 supports:
