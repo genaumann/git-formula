@@ -2,7 +2,7 @@
 
 source 'https://rubygems.org'
 
-gem 'kitchen-vagrant'
 gem 'kitchen-inspec'
 gem 'kitchen-salt', '>= 0.6.3'
+gem 'kitchen-vagrant'
 gem 'test-kitchen'
