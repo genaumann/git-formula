@@ -24,7 +24,7 @@ git_repo_remove_{{ repo }}:
 
   {%- else %}
 git_repo_{{ repo }}_{{ state }}:
-  git.{{ state}}:
+  git.{{ state }}:
     - name: {{ options['name'] }}
     - target: {{ target }}
     - user: {{ user }}

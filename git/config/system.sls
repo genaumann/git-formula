@@ -6,4 +6,4 @@ git_system_config:
     - source: salt://git/files/gitconfig.jinja
     - template: jinja
     - defaults:
-      configs: {{ git['system_config'] }}
+        configs: {{ git['system_config'] }}
