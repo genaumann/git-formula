@@ -9,8 +9,16 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+      - name: Install python3-pip
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install salt-lint
+        run: |
+          sudo pip3 install salt-lint
       - name: Run salt-lint
-        uses: roaldnefs/salt-lint-action@master
+        run: |
+          salt-lint $(find . -name '*.sls')
   rubocop:
     runs-on: ubuntu-latest
     steps:
