@@ -48,7 +48,7 @@ git:
         - path/to/private_key
       https_user: username # user for HTTPS repo
       https_pass: password # password for HTTPS repo
-      rev: HEAD # remote branch, tag, or revision ID to checkout after clone
+      rev: HEAD # remote branch, tag, or revision ID to checkout after clone <- if state == latest
       force_checkout: False # True to discard unwritten changes when checking out
       force_clone: False # if target directory exists and is not a git repository, then this state will fail
       force_fetch: False # True to force the fetch even if it is a non-fast-forward update.
