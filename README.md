@@ -1,5 +1,9 @@
 # Salt Git Formula
 
+![GitHub release](https://img.shields.io/github/v/release/genaumann/salt-git-formula)
+![lint][lint_badge]
+![test][test_badge]
+
 Install and configure git.
 Clone and update local git repositories.
 
@@ -84,3 +88,5 @@ kitchen test <instance>
 [install]: https://docs.saltproject.io/en/latest/topics/development/conventions/formulas.html
 [config_unset]: https://docs.saltproject.io/en/latest/ref/states/all/salt.states.git.html#salt.states.git.config_unset
 [issue]: https://github.com/saltstack/salt/issues/65715
+[lint_badge]: https://github.com/genaumann/salt-git-formula/actions/workflows/lint.yml/badge.svg?branch=main
+[test_badge]: https://github.com/genaumann/salt-git-formula/actions/workflows/salt-kitchen.yml/badge.svg?branch=main
