@@ -1,0 +1,28 @@
+---
+name: Lint
+on:
+  - push
+
+jobs:
+  salt-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      - name: Run salt-lint
+        uses: roaldnefs/salt-lint-action@master
+  rubocop:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      - name: Setup ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.2"
+      - name: Install rubocop
+        run: |
+          sudo gem install rubocop
+      - name: Run rubocop
+        run: |
+          rubocop -d -P -S --enable-pending-cops
