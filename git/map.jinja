@@ -1,0 +1,4 @@
+{% import_yaml 'git/defaults.yml' as defaults %}
+
+{# Merge defaults #}
+{% set git = salt['pillar.get']('git',default=defaults['git'], merge=True) %}

@@ -1,0 +1,9 @@
+---
+git:
+  pkgs:
+    - git
+  system_config_file: /etc/gitconfig
+  system_config: {}
+  repo_base_path: /src
+  repo: {}
+  user_config: []
