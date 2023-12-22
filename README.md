@@ -85,6 +85,18 @@ kitchen test <instance>
 
 - salt state [`git.config_unset`][config_unset] throws an error - see [issue 65715][issue]
 
+## OS support matrix
+
+This formula has been tested under the following operating systems and salt versions.
+
+| OS           | 3006.5 |
+| ------------ | ------ |
+| Debian 12    | ✅     |
+| Ubuntu 22.04 | ✅     |
+| Rocky 9      | ✅     |
+| Fedora 38    | ✅     |
+| OpenSUSE 15  | ✅     |
+
 [install]: https://docs.saltproject.io/en/latest/topics/development/conventions/formulas.html
 [config_unset]: https://docs.saltproject.io/en/latest/ref/states/all/salt.states.git.html#salt.states.git.config_unset
 [issue]: https://github.com/saltstack/salt/issues/65715
