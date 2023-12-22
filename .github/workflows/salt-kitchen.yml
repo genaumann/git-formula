@@ -14,6 +14,9 @@ jobs:
         instances:
           - default-ubuntu-2204-30065
           - default-debian-12-30065
+          - default-rocky9-30065
+          - default-fedora38-30065
+          - default-opensuse15-30065
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4

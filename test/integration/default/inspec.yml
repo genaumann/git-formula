@@ -8,3 +8,6 @@ summary: Verify that the git state manages git correctly
 supports:
   - platform-name: ubuntu
   - platform-name: debian
+  - platform-name: fedora
+  - platform-name: opensuse
+  - platform-name: rocky

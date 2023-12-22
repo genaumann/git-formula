@@ -11,4 +11,8 @@ control "Global conf #{os.name}" do
     its('exit_status') { should eq 0 }
     its('stdout') { should eq "status\n" }
   end
+  describe command('git config --get alias.pu') do
+    its('exit_status') { should eq 0 }
+    its('stdout') { should eq "push\n" }
+  end
 end
