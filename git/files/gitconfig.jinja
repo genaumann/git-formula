@@ -1,4 +1,4 @@
-{%- for section, conf in configs.items() -%}
+{%- for section, conf in configs.items() %}
 [{{ section }}]
     {%- for val, key in conf.items() %}
     {{ val }} = {{ key }}
