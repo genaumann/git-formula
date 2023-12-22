@@ -1,5 +1,24 @@
 # Changelog
 
+## [1.0.1](https://github.com/genaumann/salt-git-formula/compare/v1.0.0...v1.0.1) (2023-12-22)
+
+
+### 🐛 Bugfix 🐛
+
+* **config:** remove jinja whitespace ([9a58b6d](https://github.com/genaumann/salt-git-formula/commit/9a58b6de394b1c568bb2886f34c064c8df290f05))
+
+
+### 🧪 Test 🧪
+
+* add rocky opensuse and fedora ([c5cf150](https://github.com/genaumann/salt-git-formula/commit/c5cf15087a367f1a4e08b9308ae841c9c23cee80))
+* **inspec:** add git test command ([c3e6545](https://github.com/genaumann/salt-git-formula/commit/c3e65452efd455fb62dff14ce93205bac99ee0e8))
+* specify path to gitconfig ([165ac9d](https://github.com/genaumann/salt-git-formula/commit/165ac9d20d60ee799cfefd831fb0101987f097e0))
+
+
+### 📖 Documentation 📖
+
+* add os support matrix ([5af76e9](https://github.com/genaumann/salt-git-formula/commit/5af76e97b3b8e4045c28371f4a0f7159a60ec0a4))
+
 ## 1.0.0 (2023-12-21)
 
 
