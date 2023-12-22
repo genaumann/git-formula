@@ -1,6 +1,6 @@
 name: git
-os: Debian, Ubuntu
-os_family: Debian
+os: Debian, Ubuntu, Fedora, OpenSuse, Rocky
+os_family: Debian, RedHat, Suse
 version: 1.0.0
 release: 1
 minimum_version: 2015.8
