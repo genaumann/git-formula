@@ -3,15 +3,15 @@
 control "User conf #{os.name}" do
   title 'Test user conf'
 
-  describe command('git config --get user.email') do
+  describe command('git config -f ~/.gitconfig --get user.email') do
     its('exit_status') { should eq 0 }
     its('stdout') { should eq "g@gnaumann.de\n" }
   end
-  describe command('git config --get user.name') do
+  describe command('git config -f ~/.gitconfig --get user.name') do
     its('exit_status') { should eq 0 }
     its('stdout') { should eq "Gino Naumann\n" }
   end
-  describe command('git -C /home/vagrant/cib config --get user.name') do
+  describe command('git -C ~/cib config -f ~/cib/.git/config --get user.name') do
     its('exit_status') { should eq 0 }
     its('stdout') { should eq "Rainer Zufall\n" }
   end
