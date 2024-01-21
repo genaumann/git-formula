@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/genaumann/salt-git-formula/compare/v1.0.1...v1.0.2) (2024-01-21)
+
+
+### 💿 Continuous Integration 💿
+
+* **github:** set ruby version to 3.2.2 ([8dbb1b6](https://github.com/genaumann/salt-git-formula/commit/8dbb1b6a2487e74f191766c1bf320b2ced2f4e7c))
+
 ## [1.0.1](https://github.com/genaumann/salt-git-formula/compare/v1.0.0...v1.0.1) (2023-12-22)
 
 
