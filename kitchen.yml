@@ -22,7 +22,7 @@ platforms:
   - name: opensuse15-3006.5
     driver:
       box: genaumann/opensuse15-salt
-      box_version: "3006.5"
+      box_version: "3006.0"
 
 suites:
   - name: default
