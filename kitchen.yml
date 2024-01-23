@@ -19,7 +19,7 @@ platforms:
     driver:
       box: genaumann/fedora38-salt
       box_version: "3006.5"
-  - name: opensuse15-3006.5
+  - name: opensuse15-3006.0
     driver:
       box: genaumann/opensuse15-salt
       box_version: "3006.0"
