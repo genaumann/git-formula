@@ -7,18 +7,66 @@ platforms:
     driver:
       box: genaumann/ubuntu2204-salt
       box_version: "3006.5"
+  - name: ubuntu-22.04-3006.6
+    driver:
+      box: genaumann/ubuntu2204-salt
+      box_version: "3006.6"
+  - name: ubuntu-22.04-3006.7
+    driver:
+      box: genaumann/ubuntu2204-salt
+      box_version: "3006.7"
+  - name: ubuntu-22.04-3007.0
+    driver:
+      box: genaumann/ubuntu2204-salt
+      box_version: "3007.0"
   - name: debian-12-3006.5
     driver:
       box: genaumann/debian12-salt
       box_version: "3006.5"
+  - name: debian-12-3006.6
+    driver:
+      box: genaumann/debian12-salt
+      box_version: "3006.6"
+  - name: debian-12-3006.7
+    driver:
+      box: genaumann/debian12-salt
+      box_version: "3006.7"
+  - name: debian-12-3007.0
+    driver:
+      box: genaumann/debian12-salt
+      box_version: "3007.0"
   - name: rocky9-3006.5
     driver:
       box: genaumann/rocky9-salt
       box_version: "3006.5"
+  - name: rocky9-3006.6
+    driver:
+      box: genaumann/rocky9-salt
+      box_version: "3006.6"
+  - name: rocky9-3006.7
+    driver:
+      box: genaumann/rocky9-salt
+      box_version: "3006.7"
+  - name: rocky9-3007.0
+    driver:
+      box: genaumann/rocky9-salt
+      box_version: "3007.0"
   - name: fedora38-3006.5
     driver:
       box: genaumann/fedora38-salt
       box_version: "3006.5"
+  - name: fedora38-3006.6
+    driver:
+      box: genaumann/fedora38-salt
+      box_version: "3006.6"
+  - name: fedora38-3006.7
+    driver:
+      box: genaumann/fedora38-salt
+      box_version: "3006.7"
+  - name: fedora38-3007.0
+    driver:
+      box: genaumann/fedora38-salt
+      box_version: "3007.0"
   - name: opensuse15-3006.0
     driver:
       box: genaumann/opensuse15-salt
