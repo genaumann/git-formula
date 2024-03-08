@@ -89,13 +89,13 @@ kitchen test <instance>
 
 This formula has been tested under the following operating systems and salt versions.
 
-| OS           | 3006.0 | 3006.5       |
-| ------------ | ------ | ------------ |
-| Debian 12    | :x:    | ✅           |
-| Ubuntu 22.04 | :x:    | ✅           |
-| Rocky 9      | :x:    | ✅           |
-| Fedora 38    | :x:    | ✅           |
-| OpenSUSE 15  | ✅     | Not released |
+| OS           | 3006.0 | 3006.5       | 3006.6       | 3006.7       | 3007.0       |
+| ------------ | ------ | ------------ | ------------ | ------------ | ------------ |
+| Debian 12    | :x:    | ✅           | ✅            | ✅           | ✅           |
+| Ubuntu 22.04 | :x:    | ✅           | ✅            | ✅           | ✅           |
+| Rocky 9      | :x:    | ✅           | ✅            | ✅           | ✅           |
+| Fedora 38    | :x:    | ✅           | ✅            | ✅           | ✅           |
+| OpenSUSE 15  | ✅     | Not released | Not released | Not released | Not released |
 
 [install]: https://docs.saltproject.io/en/latest/topics/development/conventions/formulas.html
 [config_unset]: https://docs.saltproject.io/en/latest/ref/states/all/salt.states.git.html#salt.states.git.config_unset
