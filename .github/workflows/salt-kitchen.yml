@@ -17,6 +17,18 @@ jobs:
           - default-rocky9-30065
           - default-fedora38-30065
           - default-opensuse15-30060
+          - default-ubuntu-2204-30066
+          - default-debian-12-30066
+          - default-rocky9-30066
+          - default-fedora38-30066
+          - default-ubuntu-2204-30067
+          - default-debian-12-30067
+          - default-rocky9-30067
+          - default-fedora38-30067
+          - default-ubuntu-2204-30070
+          - default-debian-12-30070
+          - default-rocky9-30070
+          - default-fedora38-30070
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
