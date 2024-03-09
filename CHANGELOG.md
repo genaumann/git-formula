@@ -1,5 +1,24 @@
 # Changelog
 
+## [1.0.3](https://github.com/genaumann/salt-git-formula/compare/v1.0.2...v1.0.3) (2024-03-09)
+
+
+### 💿 Continuous Integration 💿
+
+* **github:** run release on successfull test [skip ci] ([a4ebd7d](https://github.com/genaumann/salt-git-formula/commit/a4ebd7d3c69dc4f266a30cbc470d4c19c7cc7c09))
+* **github:** use gh app for release ([0eddc25](https://github.com/genaumann/salt-git-formula/commit/0eddc2534e9734b993bbdfb8b85f31f96deb659f))
+* **release:** ci should not trigger a release [skip ci] ([3ca2a31](https://github.com/genaumann/salt-git-formula/commit/3ca2a31bee5dd62088d123a047bfd27fc73c0073))
+
+
+### 🧪 Test 🧪
+
+* add salt 3006.6 3006.7 3007.0 ([8a4afb4](https://github.com/genaumann/salt-git-formula/commit/8a4afb40c56a5f13cc1e7a3d4194d4c399fed41e))
+
+
+### 📖 Documentation 📖
+
+* add new supported salt versions ([e1beae3](https://github.com/genaumann/salt-git-formula/commit/e1beae3db64bbad55500dfa7233b228886104f0f))
+
 ## [1.0.2](https://github.com/genaumann/salt-git-formula/compare/v1.0.1...v1.0.2) (2024-01-21)
 
 
